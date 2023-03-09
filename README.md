@@ -1,0 +1,1 @@
+This is Project Cafe! The beginnings of a webapp with music focus and a dab of community.
