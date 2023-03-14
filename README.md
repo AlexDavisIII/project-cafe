@@ -1,1 +1,3 @@
-This is Project Cafe! The beginnings of a webapp with music focus and a dab of community.
+This is Project Cafe! A web app with music and community at the center
+
+This web app uses ExpressJS as a web server
