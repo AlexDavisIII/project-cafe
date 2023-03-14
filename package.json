@@ -1,0 +1,22 @@
+{
+  "name": "project-cafe",
+  "version": "1.0.0",
+  "description": "This is Project Cafe! The beginnings of a webapp with music focus and a dab of community.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexDavisIII/project-cafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexDavisIII/project-cafe/issues"
+  },
+  "homepage": "https://github.com/AlexDavisIII/project-cafe#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
