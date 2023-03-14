@@ -2,7 +2,7 @@
   "name": "project-cafe",
   "version": "1.0.0",
   "description": "This is Project Cafe! The beginnings of a webapp with music focus and a dab of community.",
-  "main": "script.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
