@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Exercise You</title>
 </head>
 <body>
-    <h1>Project Cafe</h1>
-    <h3>Hang Out; Put in a token; Hear A Song</h3>
-    <div class="buttonContainer">
+    <h1 id="fitHead"></h1>
+    <h3 id="fitSubHead"></h3>
+    <label for="exercise">Select an exercise:</label>
+    <select id="exerciseContainer" name="exercise">
+        <option id="exerciseList"></option>
+    </select>
+
+    <p id="exerciseImport"></p>
+    
+    
+    <script src="script.js"></script>
+
+    <!--
+    <div id="buttonContainer" class="buttonContainer">
         <div class="btn">Select From Library</div>
         <div class="btn">Surprise Me</div>
         <div class="btn">Take Me to the Lounge</div>
     </div>
-
-    <script src="app.js"></script>
+    -->
 </body>
 </html>

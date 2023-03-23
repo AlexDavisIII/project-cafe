@@ -3,26 +3,36 @@ const req = require('express/lib/request');
 const res = require('express/lib/response');
 const app = express();
 const port = 3000; 
+const API_URL = 'https://exerciseapi3.p.rapidapi.com/search/muscles/';
+
 
 
 const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': 'aedc43239dmshc259d0edc796e1bp181b04jsna6f236e42d2b',
-		'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
+		'X-RapidAPI-Host': 'exerciseapi3.p.rapidapi.com'
 	}
 };
 
-fetch('https://dad-jokes.p.rapidapi.com/random/joke', options)
-	.then(response => response.json())
-	.then(response => {
-        console.log(response.body[0].setup)
-        console.log(response.body[0].punchline)})
-	.catch(err => console.error(err));
+
+async function searchMuscle() {
+    try {
+        const response = await fetch(API_URL, options);
+        const JSONresponse = await response.json();    
+        console.log(JSONresponse);
+    } catch (mistake){
+        console.error(mistake);
+    }
+}
+
+const finalStuff = searchMuscle().then(finalData => 
+    `<p>Here is the finaldata: ${finalData}</p>`
+    );
 
 
 app.get('/',(req, res) => {
-    res.send('Hello World');
+    res.send(`Hello there! <p>${finalStuff}`);
 })
 
 app.listen(port, () =>{
